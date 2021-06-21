@@ -1,0 +1,48 @@
+
+
+.cards__all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0.2rem 0.3rem 16px 2px greenyellow;
+    min-width: 25%;
+    margin: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    transition: transform 100ms ease-in;
+    /* cursor:crosshair; */
+}
+
+.cards__all:hover{
+    transform: scale(1.1);
+}
+
+.cards__all:hover .cards__rating{
+    background: rgb(34,43,49);
+    transition: 300ms ease-in;
+}
+
+
+
+.cards__all > img{
+    width: 200px;
+    height: 300px;
+}
+
+
+.cards__rating{
+    display: flex;
+    position: absolute;
+    top:-1.0rem;
+    left:4.8rem;
+    color: black;
+    border-radius: 999px;
+    padding:4px 9px;
+    text-align: center;
+    background-color: gold;
+    color: blue;
+}
+
+.cards__rating >svg{
+    fill: brown;
+}
